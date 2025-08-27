@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="pt-br">
+
+    </html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Barbearia do vinI</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Barbearia do vini</h1>
+        <img src="img/vini cortes.png" alt="Barbearia do vinI" />
+        <p>Bem-vindo à Barbearia do vini! Agende seu horário e fique na regua.</p>
+
+
+        <div class="nome-agendante">
+            <label>Seu nome:</label>
+            <input type="text" id="nomePessoa" placeholder="Digite seu nome" />
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="toolbar">
+            <button id="anterior" class="btn" aria-label="Dia anterior">⬅️</button>
+            <div class="data-wrap">
+                <div id="data" class="data"></div>
+                <button id="hoje" class="chip">Hoje</button>
+            </div>
+            <button id="proximo" class="btn" aria-label="Próximo dia">➡️</button>
+        </div>
+
+        <div id="horarios" class="lista-horarios" aria-live="polite"></div>
+
+        <div class="acoes">
+            <button id="agendarBtn" class="btn primario">Agendar Horário</button>
+            <button id="limpar-dia" class="btn perigo" title="Apaga todos os horários deste dia">Limpar dia</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
