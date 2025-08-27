@@ -115,7 +115,7 @@ btnAgendar.addEventListener("click", () => {
     localStorage.setItem("compromissos", JSON.stringify(compromissos));
 
     // cria mensagem para o WhatsApp
-    const numero = "5513996480734"; // seu número no formato internacional
+    const numero = "551399999999"; // seu número no formato internacional
     let mensagem = `Novo compromisso agendado por ${nome}:\n`;
     for(const [hora, desc] of Object.entries(dados)){
         mensagem += `🕒 ${hora} → ${desc}\n`;
